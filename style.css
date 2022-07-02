@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#page-body {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid red;
+  gap: 10px;
+  width: 210mm;
+  height: 297mm;
+}
+
+.report-area:not(.report-header) {
+  background-color: #353676;
+  outline: 2px solid green;
+  border-radius: 5px;
+}
+
+.report-header {
+  background-color: #353676;
+  width: 100%;
+  height: 25mm;
+}
+
+.report-subheader {
+  height: 200px;
+  margin: 1cm 8mm;
+  width: 93mm;
+}
+
+.report-about {
+  width: 93mm;
+}
+
+.report-steps {
+  width: 194mm;
+  margin: 0 8mm;
+}
+
+.report-expected {
+  height: 140mm;
+}
+
+.report-received {
+  height: 140mm;
+}

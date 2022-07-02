@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+</head>
+<body>
+	<button id="print-report">PRINT REPORT</button>
+	<div id="page-body">
+		<div class="report-header report-area">HEADER</div>
+		<div class="report-subheader report-area">SUBHEADER</div>
+		<div class="report-about report-area">ABOUT</div>
+		<div class="report-steps report-area">STEPS</div>
+		<div class="report-expected report-area">
+      <h2>Expected</h2>
+      <canvas id="expected-canvas"></canvas>
+    </div>
+		<div class="report-received report-area">
+      <h2>Received</h2>
+      <canvas id="received-canvas"></canvas>
+    </div>
+	</div>
+  <script src="script.js"></script>
+</body>
+</html>
