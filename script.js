@@ -1,6 +1,11 @@
-var printButton = document.getElementById("print-report");
-printButton.onclick = printReport;
+var downloadButton = document.getElementById('print-report');
+downloadButton.onclick = printReport;
+
+var reportPage = document.getElementById('page-body');
 
 function printReport() {
-  console.log('sarasasasasa');
+  domtoimage.toBlob(reportPage)
+    .then(function (blob) {
+      window.saveAs(blob, 'bug-report.png');
+    });
 }

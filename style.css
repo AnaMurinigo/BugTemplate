@@ -4,46 +4,60 @@
   padding: 0;
 }
 
+:root{
+  --background: #aaa;
+}
+
 #page-body {
+  position: absolute;
+  left: 20px;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid red;
-  gap: 10px;
+  background-color: white;
+  outline: 1px solid #666;
   width: 210mm;
   height: 297mm;
 }
 
 .report-area:not(.report-header) {
-  background-color: #353676;
-  outline: 2px solid green;
-  border-radius: 5px;
+  background-color: var(--background);
 }
 
 .report-header {
-  background-color: #353676;
+  background-color: var(--background);
   width: 100%;
+  margin-bottom: 2mm;
   height: 25mm;
 }
 
 .report-subheader {
-  height: 200px;
-  margin: 1cm 8mm;
-  width: 93mm;
+  height: 50mm;
+  width: 102mm;
+  margin-left: 2mm;
 }
 
 .report-about {
-  width: 93mm;
+  height: 50mm;
+  width: 102mm;
+  margin-left: 2mm;
 }
 
 .report-steps {
-  width: 194mm;
-  margin: 0 8mm;
+  width: 206mm;
+  height: 100mm;
+  margin: 2mm;
 }
 
 .report-expected {
-  height: 140mm;
+  height: 114mm;
+  width: 102mm;
+  margin-left: 2mm;
+  margin-bottom: 2mm;
 }
 
 .report-received {
-  height: 140mm;
+  height: 114mm;
+  width: 102mm;
+  margin-left: 2mm;
+  margin-bottom: 2mm;
 }
